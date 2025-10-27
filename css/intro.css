@@ -1,0 +1,91 @@
+*{
+    font-family: "MedievalSharp", cursive;
+    color: rgb(0, 0, 0);
+
+}
+html, body {
+    background-color:aliceblue;
+  margin: 0;
+  height: 100%;
+   align-content: center;
+   
+}
+.intro{
+    background-color: black;
+	   animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+        display: none;
+        flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}   
+.middle{
+    height: 15%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+	        animation: scale-in-ver-center .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}   
+.butn{
+    min-width: 50% ;
+    max-width: 100%;
+    align-self: center;
+    margin: 0px;
+    pad: 0px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: clamp(4em, 6vw, 12em);
+}
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
